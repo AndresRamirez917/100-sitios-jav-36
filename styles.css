@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+}
+
+h2 {
+    text-align: center;
+    padding: 2em 0;
+    text-transform: uppercase;
+    color: red;
+    font-size: 3em;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+    overflow: auto;
+}
+
+.display-1 {
+    font-size: 3em;
+    font-weight: lighter;
+    text-align: center;
+    margin: 2em 0 1em 0;
+    color: #fff;
+}
+
+.display-2 {
+    text-align: center;
+    padding: 3em 0;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 3em;
+}
+
+.btn {
+    padding: 10px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 3px;
+border: none;
+}
+
+.button-2:active, .button-3:active, .button-4:active {
+    transform: translate(2px, 2px);
+ 	box-shadow: none;
+}
+
+.button-1 {
+    background: red;
+    color: #fff;
+}
+
+.button-1:hover {
+    background: rgb(246, 72, 72);
+    color: #fff;
+}
+
+.button-2 {
+    background: none;
+    border: 1px solid red;
+    color: red;
+}
+
+.button-2:hover {
+    color: rgb(239, 124, 124) ;
+}
+
+.button-3 {
+    border: none;
+    background: rgb(230, 207, 207);
+    color: red;
+}
+
+.button-3:hover {
+    background: rgb(227, 101, 101);
+   
+}
+
+.button-4 {
+    background: #000;
+    color: #fff;
+    margin-bottom: 2em;
+}
+
+.button-4:hover {
+    background: #292929;
+}
+
+.box {
+    border: 1px solid red;
+    padding: 20px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+form .form-group {
+    margin-bottom: 1em;
+    display: inline;
+}
+
+form .form-control {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 2px;
+    margin-bottom: 1em;
+}
+
+form button {
+    width: 100%;
+}
+
+ .navbar ul li a:hover,
+ .navbar ul li a:active {
+    color: #ea2bb2;
+}
+
+/* mainheader */
+#mainheader {
+    background: url("/img/showcase.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+/* navbar */
+.navbar .logo {
+    float: left;
+    margin-top: 2em;
+}
+
+.navbar ul {
+    float: right;
+    margin-top: 2em;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin-left: 1em;
+}
+
+/* showcase */
+#showcase h3 {
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+    margin: 1em 0;
+}
+
+#showcase .button-1 {
+    display: block;
+    margin: 0 auto;
+}
+
+/* events */
+#events .events-row {
+    display: flex;
+   gap: 20px;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.events-row h3 {
+    margin: 2em 0;
+}
+
+.events-row p {
+    margin-bottom: 1em;
+}
+
+.events-row .button-2 {
+    margin-bottom: 3em;
+}
+
+/* about */
+#about {
+    color: #fff;
+    background: red;
+    margin-top: 2em;
+}
+
+#about h3{
+    font-size: 2em;
+    margin-top: 3em ;
+    margin-bottom: 1em;
+}
+#about h2, p{
+    text-align: left;
+}
+
+#about p {
+    margin-bottom: 4em;
+}
+
+/* speakers */
+#speakers {
+    margin-bottom: 2em;
+}
+#speakers img {
+    width: 100%;
+}
+
+#speakers .speakers-row {
+    display: flex;
+    margin-left: 10px;
+    text-align: center;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+#speakers h3, h4 {
+    margin-top: 1.5em;
+}
+
+#speakers h4 {
+    margin-bottom: 2em;
+}
+
+/* ticket */
+#ticket {
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+    background: red;
+}
+
+#ticket h2 {
+    color: #fff !important;
+}
+
+#ticket button {
+    margin: 2em 0 3em 0;
+}
+/* contact */
+#contact form {
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* footer */
+#footer {
+    text-align: center;
+    padding: 2em 0;
+    background: red;
+}
+
+/*!
+ * ScrollToTop v2.0
+ * Copyright 2019 zkreations
+ * Daniel Abel M. (fb.com/danieI.abel)
+ * Licensed under MIT (github.com/zkreations/plugins/blob/master/LICENSE)
+ */
+/*! Core (No modificar) {{*/
+    .scrollToTop {
+        outline: none;
+        border: none;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    
+    .scrollToTop svg {
+        display: block;
+    }
+    
+    .scrollToTop {
+        position: fixed;
+        z-index: 9999;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity .3s, background .3s, -webkit-transform .3s;
+        transition: transform .3s, opacity .3s, background .3s;
+        transition: transform .3s, opacity .3s, background .3s, -webkit-transform .3s;
+        -webkit-transform: translateY(-2em);
+        transform: translateY(-2em);
+    }
+    
+    .scrollToTop.visible {
+        pointer-events: all;
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    
+    /*}} Fin del core {{*/
+    
+    /*! Personalización */
+    /* Icono
+         -----------------------------------------*/
+    .scrollToTop svg {
+        fill: #FFFFFF;
+        /* color */
+    }
+    
+    /* Boton
+         -----------------------------------------*/
+    .scrollToTop {
+        background-color: #cc7980;
+        /* fondo */
+        box-shadow: 0 1px 4px rgba(0, 0, 0, .5);
+        /* sombra */
+        bottom: 1em;
+        /* separación inferior */
+        right: 1em;
+        /* separación derecha */
+        padding: .5em;
+        /* relleno */
+        border-radius: 4px;
+        /* borde redondeado */
+    }
+    
+    .scrollToTop:hover {
+        background-color: #880509;
+        /* fondo (hover) */
+    }
