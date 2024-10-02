@@ -136,6 +136,13 @@ form button {
     color: #ea2bb2;
 }
 
+::placeholder {
+    font-family: "Font Awesome 5 free";
+    font-weight: 500;
+    content: "\f007";
+    text-align: right;
+}
+
 /* mainheader */
 #mainheader {
     background: url("/img/showcase.jpg");
@@ -237,6 +244,19 @@ form button {
 
 #speakers h4 {
     margin-bottom: 2em;
+}
+
+.card h3 {
+    width: 250px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-bottom: 1rem;
+}
+
+.card h3, h4 {
+display: block;
+margin: 0 auto;
 }
 
 /* ticket */

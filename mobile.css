@@ -32,3 +32,9 @@ html, body {
 #speakers .speakers-row {
     display: block;
 }
+
+.card h3 {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
