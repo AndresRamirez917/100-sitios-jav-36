@@ -22,7 +22,11 @@ for(let i of dessertsArr.slice(0, 1)){
 }
 
 function events(){
-    for(i = 1; i < 5; i++){
+    const arr = [1, "madre", {loca:"hector"}, ["conejo es re-loka"]];
+    // prueba para recorrer un array con diferentes elementos, 
+    // agregando cajas de acuerdo al tamaño del mismo
+    // no importa el tipo del elemento, el crea una caja
+    for(let i of arr){
         const box = document.createRange().createContextualFragment(`
             
                 <div class="box box-${i}">
