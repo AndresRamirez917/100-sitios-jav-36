@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" media="screen and (max-width:768px)" href="/mobile.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <title>EVENTS | Welcome</title>
 </head>
 <body>
@@ -70,26 +71,6 @@
         <div class="container">
             <h2>speakers</h2>
             <div class="speakers-row">
-                <div class="card card-1">
-                    <img src="/img/speaker-1.jpg" alt="">
-                <h3>Jhoanna Doe</h3>
-                <h4>Web Developer</h4>
-                </div>
-                <div class="card card-1">
-                    <img src="/img/speaker-2.jpg" alt="">
-                <h3>Eric Green</h3>
-                <h4>Web Designer</h4>
-                </div>
-                <div class="card card-1">
-                    <img src="/img/speaker-3.jpg" alt="">
-                <h3>Ana Wilson</h3>
-                <h4>Web Marketer</h4>
-                </div>
-                <div class="card card-1">
-                    <img src="/img/speaker-4.jpg" alt="">
-                <h3>Maria Andes</h3>
-                <h4>web developer</h4>
-                </div>
             </div>
         </div>
     </section>
@@ -108,17 +89,17 @@
             <form action="">
                 <div class="form-group">
                     <label for="">Nombre</label>
-                    <input type="text" class="form-control" placeholder="Ingrese su Nombre">
+                    <input id="nombre" type="text" class="form-control" placeholder="Ingrese su Nombre">
                 </div>
                 <div class="form-group">
                     <label for="">Email</label>
-                    <input type="text" class="form-control" placeholder="Ingrese su Email">
+                    <input id="email" type="text" class="form-control" placeholder="Ingrese su Email">
                 </div>
                 <div class="form-group">
                     <label for="">Mensaje</label>
-                    <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Ingrese su Mensaje"></textarea>
+                    <textarea name="" id="mensaje" cols="30" rows="10" class="form-control" placeholder="Ingrese su Mensaje"></textarea>
                 </div>
-                <button class="btn button-4">submit</button>
+                <button id="btn-enviar" class="btn button-4">submit</button>
             </form>
         </div>
     </section>
@@ -135,5 +116,6 @@
         </svg>
       </button>
       <script src='//cdn.jsdelivr.net/gh/zkreations/plugins@1.0.8/dist/js/scrollup.min.js'></script>
+      <script src="js/index.js"></script>
 </body>
 </html>
